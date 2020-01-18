@@ -23,7 +23,12 @@ public class App {
 	private static Logger log = Logger.getLogger(App.class.getName());
 	private static String OUTPUT_FILENAME = "output.txt";
 
-	public static void main(String[] args)  {
+	public static void main(String[] args) {
+
+		if (args.length == 0) {
+			log.log(Level.INFO, "Please set path to input file.");
+			return;
+		}
 
 		TreeSet<Record> records = new TreeSet<>();
 		Path filePath = Paths.get(args[0]);
