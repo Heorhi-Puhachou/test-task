@@ -1,2 +1,2 @@
 # test-task
-Test-task for dual lab
+Here you can found code for test task. Just execute "clean package" for Maven to get executable jar-file.
